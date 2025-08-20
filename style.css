@@ -1,0 +1,522 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+
+  
+  background: linear-gradient(135deg, #e6f7e9, #fdfcfb);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  opacity: 0.2;
+  z-index: -1;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  margin-left: 8px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  color: #222222;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.anker ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.anker ul li a {
+  margin: 0 10px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #222222;
+  transition: color 0.3s ease;
+}
+
+.anker ul li a:hover {
+  color: #ff3e6c;
+}
+
+
+.search input {
+  width: 220px;
+  height: 28px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+}
+
+.search button {
+  background-color: #ff3e6c;
+  height: 30px;
+  width: 90px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background 0.3s ease;
+}
+
+.search button:hover {
+  background-color: #e0355e;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("an-assortment-of-fresh-fruits-and-vegetables-on-a-green-background-created-with-generative-ai-technology-free-photo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 80px;
+}
+
+.content h1 {
+  font-size: 57px;
+  margin: 5px 0;
+  color: white;
+}
+
+.content button {
+  border: none;
+  background-color: #ff3e6c;
+  height: 30px;
+  width: 140px;
+  border-radius: 20px;
+  margin-top: 15px;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.content button:hover {
+  background-color: #e0355e;
+  transform: scale(1.05);
+}
+
+.trend-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 50px 20px;
+}
+
+.producttrend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product {
+  height: 370px;
+  width: 240px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  border-radius: 8px;
+}
+
+.product img {
+  width: auto;
+  height: 80%;
+  object-fit: cover;
+}
+
+.product h3,
+p {
+  margin: 5px 0;
+}
+
+.head h1 {
+  color: #002147;
+  text-shadow: 2px 4px 12px rgb(198, 16, 16);
+  font-size: 45px;
+}
+
+.head p {
+  color: #ff3b3f;
+}
+
+.trend-button button {
+  border: none;
+  background-color: #ff3e6c;
+  height: 30px;
+  width: 140px;
+  border-radius: 20px;
+  margin-top: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+
+.organic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 20px;
+}
+
+.h3 h1 {
+  color: #002147;
+  text-shadow: 2px 4px 12px rgb(198, 16, 16);
+  font-size: 45px;
+}
+
+.h3 p {
+  color: #e0355e;
+}
+
+.organicpro {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.organic {
+  height: 370px;
+  width: 320px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 8px;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  display: flex;
+  background: white;
+}
+
+.organic img {
+  height: 80%;
+  width: auto;
+  object-fit: cover;
+}
+
+.organic-button button {
+  border: none;
+  background-color: #ff3e6c;
+  height: 33px;
+  width: 190px;
+  border-radius: 20px;
+  margin-top: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+
+.store-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 20px;
+}
+
+.storepro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.store {
+  height: 300px;
+  width: 250px;
+  box-shadow: 0 6px 12px greenyellow;
+  margin: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+}
+
+.store img {
+  height: 65%;
+  width: auto;
+  object-fit: cover;
+}
+
+.store-head h1 {
+  color: #002147;
+  text-shadow: 2px 4px 12px rgb(198, 16, 16);
+  font-size: 45px;
+}
+
+.store-head p {
+  color: #e0355e;
+  font-size: 20px;
+}
+
+/* 🌿 Contact Section */
+.Contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 20px;
+}
+
+.heading h2 {
+  color: #002147;
+  text-shadow: 2px 4px 12px rgb(198, 16, 16);
+  font-size: 45px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.heading p {
+  color: #e0355e;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+#loca {
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0px 6px 12px greenyellow;
+  width: 350px;
+  background: white;
+  border-radius: 8px;
+}
+
+.adress {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.adress input {
+  width: 300px;
+  border: 1px solid yellowgreen;
+  height: 25px;
+  box-shadow: 0px 4px 12px rgb(10, 145, 241);
+  margin: 20px;
+}
+
+
+.contactsub button {
+  border: none;
+  background-color: #ff3e6c;
+  height: 33px;
+  width: 190px;
+  border-radius: 20px;
+  margin-top: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+
+.fotter {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 20px;
+  height: auto;
+  width: 100%;
+  color: white;
+}
+
+.toppart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footercontent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0;
+  box-shadow: 2px 2px 12px greenyellow;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.data {
+  min-width: 180px;
+  margin: 20px;
+  text-align: center;
+}
+
+.toppart h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 2px 2px 12px greenyellow;
+}
+
+.ff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.ff input {
+  background-color: black;
+  color: white;
+  width: 300px;
+  height: 32px;
+  border: 2px solid white;
+  padding: 5px;
+}
+
+.ff button {
+  height: 32px;
+  border: none;
+  padding: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  width: 80px;
+  margin-left: 8px;
+  background: #ff3e6c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+  .producttrend, .organicpro, .storepro, .footercontent, .details {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product, .organic, .store, #loca {
+    width: 80%;
+    max-width: 350px;
+  }
+
+  .content h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .anker ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search input {
+    width: 180px;
+  }
+
+  .content {
+    padding-left: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 32px;
+  }
+
+  .trend-container, .organic-container, .store-container, .Contact-container, .fotter {
+    padding: 20px;
+  }
+
+  .footercontent {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  .search input {
+    width: 140px;
+  }
+
+  .content h1 {
+    font-size: 26px;
+  }
+
+  .product, .organic, .store {
+    height: auto;
+    padding: 10px;
+  }
+
+  .ff input {
+    width: 200px;
+  }
+}
+
+.reveal {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: all 1.2s ease-in-out;
+}
+
+.product, .organic, .store, .details {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+
+#backToTop:hover {
+  background: darkgreen;
+}
